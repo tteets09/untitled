@@ -1,0 +1,48 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+}
+
+.fixed {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    color: #eeeeee;
+    text-align: center;
+    display: table;
+}
+.fixed h3 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+.scroll {
+    background-color: #202c34;
+    padding-top: 2px;
+}
+
+.one {
+    background-image: url(../images/forest4.jpg);
+}
+
+.two {
+    background-image: url(../images/forest2.jpg);
+}
+
+.three {
+    background-image: url(../images/forest1.jpg);
+}
+
+.four {
+    background-image: url(../images/forest3.jpg);
+}
