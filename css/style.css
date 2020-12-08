@@ -63,9 +63,30 @@ html, body {
 }
 
 /*------------------*/
+.blue {
+    background-color: #202c34fb;
+    color:#6f919b;
+    box-shadow: 0 0 20px  #11191f;
+}
+.content-box {
+    position: absolute;
+    padding: 20px;
+    height: 420pt;
+    width: 400px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
 #continue{
-    width: 132px;
-    margin: 10px 15px;
+    width: 50%;
     line-height: 1;
     padding: 5px;
     font-size: 30px;
@@ -75,6 +96,7 @@ html, body {
     background-size: 200% auto;
     background-position: 100% 0;
     transition: background-position 275ms ease;
+    margin: 0 25%;
 }
 
 #continueLink{
