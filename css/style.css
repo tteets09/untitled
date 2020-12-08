@@ -135,32 +135,17 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-.grid-container-5x1 {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
 
 /*Placing Containers*/ 
+.fixedOneSpacer1 {
+    grid-column: 1;
+}
+
+.fixedOneSpacer2 {
+    grid-column: 3;
+}
 .fixedOneBox {
     grid-column: 2;
-}
-
-.fixedTwoBox1 {
-    grid-column: 1;
-    margin: 0 10%;
-}
-
-.fixedTwoBox2 {
-    grid-column: 2;
-    margin: 0 10%;
-}
-
-.fixedTwoBox3 {
-    grid-column: 3;
-    margin: 0 10%;
 }
 
 
