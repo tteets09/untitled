@@ -7,7 +7,8 @@ disableScroll();
 continueLink.addEventListener('click', () => {
     setTimeout(function() {
         one.remove();
-    }, 1000);
+        enableScroll()
+    }, 800);
 });
 
 //Allows links in same page to scroll smoothly to them.
@@ -25,7 +26,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function disableScroll() { 
     document.body.classList.add("stop-scrolling"); 
 } 
-  
+
+//Enable Scrolling
 function enableScroll() { 
     document.body.classList.remove("stop-scrolling"); 
 } 
+
