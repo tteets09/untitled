@@ -20,14 +20,8 @@ Stream: #acd0cd
     width: 100%;
     height: 57px;
 }
-/*Creation of Grids*/
-.grid-container-3x3 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
+
+
 /* Background CSS */
 html, body {
     height: 100%;
@@ -133,14 +127,54 @@ html, body {
     transform: scale(1.1);
 }
 
+/*Creation of Grids*/
+.grid-container-3x1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container-5x1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Placing Containers*/ 
+.fixedOneBox {
+    grid-column: 2;
+}
+
+.fixedTwoBox1 {
+    grid-column: 1;
+    margin: 0 10%;
+}
+
+.fixedTwoBox2 {
+    grid-column: 3;
+    margin: 0 10%;
+}
+
+.fixedTwoBox3 {
+    grid-column: 5;
+    margin: 0 10%;
+}
+
+
+
 /* Main Container CSS */
+/*Container Colors*/
 .blue {
     background-color: #202c34fb;
     color:#6f919b;
     box-shadow: 0 0 20px  #11191f;
 }
+
+/*Content Box Properties*/
 .content-box {
-    grid-column: 2;
     padding: 20px;
     height: 420pt;
     width: 400px;
