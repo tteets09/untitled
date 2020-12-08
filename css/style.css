@@ -142,6 +142,11 @@ html, body {
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait){
+    .grid-container-3x1 {
+        grid-template-columns: auto auto;
+        grid-template-rows: 40% auto;
+
+    }
     .fixedTwoBox1 {
         grid-column: 1 !important;
         grid-row: 1;
@@ -152,9 +157,11 @@ html, body {
         grid-row: 1;
     }
     .fixedTwoBox3 {
-        grid-column: 1 !important;
+        grid-column: 1 / span 2 !important;
         grid-row: 2;
-        margin-left: 30px;
+        margin:0 30px;
+        width: auto !important;
+        font-size: 25px !important;
     }
   }
 .fixedTwoBox1 {
