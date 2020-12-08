@@ -1,4 +1,5 @@
 /*
+Colors:
 Charlston Green: #202c34
 Dark Slate Gray: #244c53
 Azurite: #6f919b
@@ -8,22 +9,13 @@ Stream: #acd0cd
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
-.disable-scrollbars::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* Chrome/Safari/Webkit */
-}
-
-.disable-scrollbars {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
-}
-
+/*Stop Scrolling Function CSS */
 .stop-scrolling { 
     height: 100%; 
     overflow: hidden !important; 
 } 
 
+/* Background CSS */
 html, body {
     height: 100%;
     margin: 0;
@@ -73,7 +65,62 @@ html, body {
     background-image: url(../images/forest3.jpg);
 }
 
-/*------------------*/
+/*Navigation Bar CSS*/
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #202c34;
+    z-index: 1000;
+    border-bottom: 4px solid #182127c7;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#nabvar ul li {
+    display: block;
+}
+  
+#navbar  a {
+    display: block;
+    text-decoration: none;
+    color: #6f919b;
+    text-align: center;
+    padding: 18px 30px;
+    font-family: "Courier New";
+    overflow: hidden;
+    background: linear-gradient(to right, #344c53 50%, #202c34 50%);
+    background-size: 201% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+#navbar a:hover {
+    background-position: 0 100%;
+    color: #acd0cd;
+}
+
+#deadTree {
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: transform  500ms ease;
+}
+#deadTree:hover {
+    transform: scale(1.1);
+}
+
+/* Main Container CSS */
 .blue {
     background-color: #202c34fb;
     color:#6f919b;
@@ -98,6 +145,7 @@ html, body {
     border-radius: 10px;
 }
 
+/*Continue Button CSS*/
 #continue{
     width: 50%;
     line-height: 1;
