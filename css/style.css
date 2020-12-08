@@ -1,3 +1,14 @@
+/*
+Charlston Green: #202c34
+Dark Slate Gray: #244c53
+Azurite: #6f919b
+Space Cadet: #202d46
+Matallic Blue: #22536d
+Stream: #acd0cd
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 html, body {
     height: 100vh;
     margin: 0;
@@ -5,10 +16,10 @@ html, body {
 
 .wrapper {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Rubik", sans-serif;
     line-height: 1.5;
     word-spacing: 2px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .fixed {
@@ -45,4 +56,48 @@ html, body {
 
 .four {
     background-image: url(../images/forest3.jpg);
+}
+
+/*------------------*/
+#continue{
+    width: 132px;
+    margin: 10px 15px;
+    line-height: 1;
+    padding: 5px;
+    font-size: 30px;
+    border: 3px solid #22536d;
+    border-radius: 6px;
+    background-image: linear-gradient(to right,#202d46 50%, #6f919b00 50%);
+    background-size: 200% auto;
+    background-position: 100% 0;
+    transition: background-position 275ms ease;
+}
+
+#continueLink{
+    position: relative;
+    display: inline-block;
+    color:#22536d;
+    text-decoration: underline;
+    overflow: hidden;
+}
+
+#continueLink::before {
+    position: absolute;
+    content: attr(data-content);
+    top: 0;
+    left: 0;
+    color:  #6f919b;
+    text-decoration: underline;
+    overflow: hidden;
+    transition: width 275ms ease;
+    width: 0;
+    white-space: nowrap;
+}
+
+#continueLink:hover::before{
+    width: 100%;
+}
+
+#continue:hover {
+    background-position: 0 0;
 }
