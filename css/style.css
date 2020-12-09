@@ -65,7 +65,7 @@ Stream: #acd0cd
     #continueLink {
         margin: 3%;
     }
-    
+
     .fixedTwoBox1 {
         grid-column: 1 !important;
         grid-row: 1;
@@ -95,6 +95,7 @@ Stream: #acd0cd
 html, body {
     height: 100%;
     margin: 0;
+    background-color: #202c34;
 }
 
 .wrapper {
