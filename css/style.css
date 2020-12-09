@@ -16,6 +16,22 @@ Stream: #acd0cd
 } 
 /*Cell Phone*/
 @media screen and (max-device-width: 640px){
+    nav,ul,li,img {
+        display: none;
+    }
+
+    #mobileNavbar {
+        position: fixed;
+        top: 0;
+        left: 20px;
+        padding: 18px 30px;
+        width: 100%;
+        background: #202c34;
+        z-index: 1000;
+        border-bottom: 4px solid #182127c7;
+        color: #6f919b;
+    }
+    
     .grid-container-two {
         grid-template-columns: auto auto;
         grid-template-rows: 50% auto;
@@ -51,6 +67,23 @@ Stream: #acd0cd
 
 /*Tablet*/
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+    nav,ul,li,img {
+        display: none;
+    }
+
+    #mobileNavbar {
+        position: fixed;
+        top: 0;
+        left: 20px;
+        padding: 18px 30px;
+        width: 100%;
+        background: #202c34;
+        z-index: 1000;
+        border-bottom: 4px solid #182127c7;
+        color: #6f919b;
+    }
+    
     .grid-container-two {
         grid-template-columns: auto auto;
         grid-template-rows: 50% auto;
@@ -141,6 +174,58 @@ html, body {
 .four {
     background-image: url(../images/forest3.jpg);
 }
+
+/*Mobile Navbar*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color:  #202c34;
+    background-color:  #202c34a6;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #6f919b;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #acd0cd;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
 
 /*Navigation Bar CSS*/
 #navbar {

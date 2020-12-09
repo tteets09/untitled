@@ -2,6 +2,14 @@
 const continueLink = document.getElementById("continueLink");
 const one = document.getElementById("one");
 disableScroll();
+//Mobile Navigation Bar
+function openNav() {
+    document.getElementById("mobNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mobNav").style.width = "0%";
+  }
 
 //After click on continue button. Remove section one.
 continueLink.addEventListener('click', () => {
