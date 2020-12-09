@@ -89,7 +89,7 @@ Stream: #acd0cd
         width: 100%;
         background: #202c34;
         z-index: 1000;
-        border-bottom: 4px solid #182127c7;
+        border-bottom: 4px solid #182127cb;
         color: #6f919b;
     }
     
@@ -199,6 +199,7 @@ html, body {
     left: 0;
     background-color:  #202c34;
     background-color:  #202c34a6;
+    backdrop-filter: blur(6px);
     overflow-x: hidden;
     transition: 0.5s;
   }
