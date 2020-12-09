@@ -16,11 +16,21 @@ Stream: #acd0cd
 } 
 /*Cell Phone*/
 @media screen and (max-device-width: 640px){
-    .grid-container-3x1 {
+    .grid-container-two {
         grid-template-columns: auto auto;
         grid-template-rows: 50% auto;
-
     }
+
+    .big-content-box {
+        width: 750px !important;
+        height: 900px !important;
+        font-size: 30px;
+    }
+
+    #continueLink {
+        margin: 3%;
+    }
+
     .fixedTwoBox1 {
         grid-column: 1 !important;
         grid-row: 1;
@@ -41,11 +51,21 @@ Stream: #acd0cd
 
 /*Tablet*/
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-    .grid-container-3x1 {
+    .grid-container-two {
         grid-template-columns: auto auto;
         grid-template-rows: 50% auto;
-
     }
+
+    .big-content-box {
+        width: 750px !important;
+        height: 900px !important;
+        font-size: 30px;
+    }
+
+    #continueLink {
+        margin: 3%;
+    }
+    
     .fixedTwoBox1 {
         grid-column: 1 !important;
         grid-row: 1;
