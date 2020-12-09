@@ -20,10 +20,15 @@ Stream: #acd0cd
         display: none;
     }
 
+    .spacer {
+        height: 75px !important;
+    }
+    
     #mobileNavbar {
+        display: unset !important;
         position: fixed;
         top: 0;
-        left: 20px;
+        left: 0;
         padding: 18px 30px;
         width: 100%;
         background: #202c34;
@@ -72,10 +77,14 @@ Stream: #acd0cd
         display: none;
     }
 
+    .spacer {
+        height: 75px !important;
+    }
     #mobileNavbar {
+        display: unset !important;
         position: fixed;
         top: 0;
-        left: 20px;
+        left: 0;
         padding: 18px 30px;
         width: 100%;
         background: #202c34;
@@ -120,7 +129,7 @@ Stream: #acd0cd
 .spacer
 {
     width: 100%;
-    height: 57px;
+    height: 58px;
 }
 
 
@@ -129,6 +138,7 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #202c34;
+    font-family: "Rubik", sans-serif;
 }
 
 .wrapper {
@@ -176,6 +186,9 @@ html, body {
 }
 
 /*Mobile Navbar*/
+#mobileNavbar {
+    display:none;
+}
 
 .overlay {
     height: 100%;
